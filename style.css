@@ -1,1 +1,79 @@
+/* Google font */
+body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background-color: #EAE5DF;
+}
 
+.tiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    color: #1C1C1C;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #CF2C1C;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.section:hover{
+    background-color: #CF2C1C;
+}
+
+.flex-item:hover {
+    background-color: #1C1C1C;
+}
+
+.flex-item.music-history {
+    background-image: url('/path/to/MFDOOM_MADVILLAIN.jpg'); /* Update with the correct URL path */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Make text color contrast with background */
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1000px;
+    max-width: 1000px;
+}
+
+.flex-item{
+    flex: 1 1 calc(33.333% - 10px);
+    background-color: #1C1C1C;
+    color: EAE5DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
