@@ -1,22 +1,18 @@
-
+/* Google font */
 body {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-    background-image: linear-gradient(#EAE5DF, #1C1C1C);
+    background-image: linear-gradient(#EAE5DF, #1C1C1C); 
 }
 
-.tiles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar {
+.navbar { /* Nav Bar functionality */
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: black;
     padding: 1rem;
     z-index: 10;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 .navbar ul {
@@ -26,7 +22,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #1C1C1C;
+    color: white;
     text-decoration: none;
     padding: 10px;
 }
@@ -34,15 +30,15 @@ body {
 .navbar ul li a:hover {
     color: #CF2C1C;
 }
-/* Dropdown styling */
-.navbar ul li {
+
+.navbar ul li { /* Dropdown */
     position: relative;
 }
 
 .navbar ul li .dropdown {
-    display: none; /* Hide dropdown by default */
+    display: none; /*Hides the dropdown*/
     position: absolute;
-    top: 100%; /* Position below the parent item */
+    top: 100%;
     left: 0;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -76,31 +72,70 @@ body {
   padding: 1rem;
 }
 
-.section h1:hover {
-    color: #CF2C1C;
+.tiles {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-.flex-item:hover {
-    background-color: #CF2C1C;
-}
-
-.flex-container {
+.flex-container { /* Flex Container */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 1000px;
-    max-width: 1000px;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically within each row */
+    max-width: 1000px; 
 }
 
 .flex-item {
-    flex: 1 1 calc(33% - 10px);
-    background-color: #1C1C1C;
-    color: white;
+    position: relative;
+    cursor: pointer;
+    color: #EAE5DF;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
-    height: 300px; 
+    font-size: 1.5rem;
+    height: 300px;
     width: 300px;
+    background-color: #1C1C1C;
     border-radius: 8px;
+    transition: all 0.50s ease;
+    text-align: center;
+}
+
+.flex-item:hover::before {
+    content: attr(data-info); /* Display content from data-info attribute */
+    color: white;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure full height for vertical centering */
+    width: 100%; /* Ensure full width for horizontal centering */
+    position: absolute; /* Position over the original content */
+    top: 0;
+    left: 0;
+    border-radius: 8px; /* Match box shape */
+}
+
+.flex-item:hover {
+    background-color: #CF2C1C; /* Adds color to button */
+}
+
+.flex-item:hover { /*Dont delete*/
+    color: transparent; /*This hides the content completely*/
+}
+
+footer { /*Footer*/
+    background-color: black;
+    color: white;
+    text-align: center; /*Center text*/
+    padding: 1rem;
+    border-top: 2px solid red; /* Top border */
+    border-bottom: 2px solid red; /* Bottom border */
+    display: flex;
+    justify-content: center; /* Center aligns in flexbox */
+    align-items: center; /* Center aligns vertically*/
+    flex-direction: column;
 }
