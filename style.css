@@ -2,7 +2,7 @@
 body {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-    background-color: #EAE5DF;
+    background-image: linear-gradient(#EAE5DF, #1C1C1C);
 }
 
 .tiles {
@@ -25,7 +25,7 @@ body {
     list-style-type: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     color: #1C1C1C;
     text-decoration: none;
     padding: 10px;
@@ -34,19 +34,54 @@ body {
 .navbar ul li a:hover {
     color: #CF2C1C;
 }
-
-.section h1 {
-    text-align: center;
-    font-size: 3rem;
-    padding: 1rem;
+/* Dropdown styling */
+.navbar ul li {
+    position: relative;
 }
 
-.section:hover{
+.navbar ul li .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.navbar ul li .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+.navbar ul li .dropdown li a:hover {
     background-color: #CF2C1C;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+.section h1{
+  text-align:center;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.section h1:hover {
+    color: #CF2C1C;
 }
 
 .flex-item:hover {
-    background-color: #1C1C1C;
+    background-color: #CF2C1C;
 }
 
 .flex-container {
@@ -57,15 +92,15 @@ body {
     max-width: 1000px;
 }
 
-.flex-item{
-    flex: 1 1 calc(33.333% - 10px);
+.flex-item {
+    flex: 1 1 calc(33% - 10px);
     background-color: #1C1C1C;
-    color: EAE5DF;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    height: 300px;
+    font-size: 1.5em;
+    height: 300px; 
     width: 300px;
     border-radius: 8px;
 }
