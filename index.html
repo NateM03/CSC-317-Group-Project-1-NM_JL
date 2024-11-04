@@ -1,49 +1,73 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life of MFDOOM</title>
+    <title>The Life Of MFDOOM</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    /* Header */
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    /* Main Content */
+<body>
+
+    <nav class="navbar">
+    <ul>
+        <li>
+            <a href="#home">Home</a>
+            <ul class="dropdown">
+                <li><a href="#option1">Music History</a></li>
+                <li><a href="#option2">Biography</a></li>
+                <li><a href="#option3">Death</a></li>
+                <li><a href="#option4">Legacy</a></li>
+                <li><a href="#option5">Behind the Mask</a></li>
+                <li><a href="#option6">Alter Ego</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#about">About</a>
+          <ul class="dropdown">
+                <li><a href="#about1">Who is MFDOOM?</a></li>
+                <li><a href="#about2">Our Team</a></li>
+           </ul>
+           </li>
+        <li>
+         <a href="#contact">Contact</a>
+            <ul class="dropdown">
+                <li><a href="#contact1">Nathaniel Moreno</a></li>
+                <li><a href="#contact2">Julian Luna</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
     <div class="content">
         <section id="home" class="section">
-            <h1>Life of MF DOOM </h1>
+            <h1>THE LIFE OF MFDOOM</h1>
         </section>
 
-        <section class="tiles">
-            <div class="flex-container">
-                <div class="flex-item">Music History</div>
-                <div class="flex-item">Birthplace/growing up</div>
-                <div class="flex-item">Death</div>
-                <div class="flex-item">Legacy</div>
-                <div class="flex-item">History Behind the Mask</div>
-                <div class="flex-item">Alter Ego</div>
-            </div>
-        </section>
-
+       <section class="tiles">
+    <div class="flex-container">
+        <div class="flex-item" data-info="MF DOOM is a British-American Rapper, with over 1000 songs in total! He also has about 19 Albums in total in his career.">Music History</div>
+        <div class="flex-item" data-info="Daniel Dumile (MF DOOM) grew up in Long Beach New York, and was born in Hounslow London. ">Birthplace/Growing Up</div>
+        <div class="flex-item" data-info="MF DOOM sadly passed away on October 31st, 2020. His death was reported right away from his family so it was unkown for awhile that he had even passed.">Death</div>
+        <div class="flex-item" data-info="MF DOOM is looked at to be one of the most influential and engimatic rappers to ever live. He would mix jazz beats, masterful wordplay, and would use samples of cartoons and finctional characters.">Legacy</div>
+        <div class="flex-item" data-info="MF DOOM would wear his mask to hide his idenity and to avoid people thinking about his apperance and more rather focus on his music.">History Behind the Mask</div>
+        <div class="flex-item" data-info="MF DOOM would have alter egos, which would be different names that he would rap under such as, Viktor Vaugh, King Geedorah, Metal Fingers, and DOOM.">Alter Ego</div>
+    </div>
+</section>
         <section id="contact" class="section">
             <h2>Contact Us</h2>
             <p>Nathaniel Moreno nmoreno@sfsu.edu</p>
-            <p>Julian Luna jluna14@sfsu.edu</p>
+            <p>Julian Luna jluna14@sfsu</p>
+        </section>
     </div>
 
-    /* Footer */
+    <!-- Footer -->
     <footer>
-        <p> MF DOOM </p>
+        <p>MFDOOM</p>
+        <p>
+        Nathaniel Moreno (nmoreno@sfsu.edu)
+        Julian Luna (jluna14@sfsu)
+        </p>
     </footer>
-
 </body>
 </html>
