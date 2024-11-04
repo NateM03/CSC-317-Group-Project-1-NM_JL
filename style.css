@@ -127,6 +127,10 @@ body {
     color: transparent; /*This hides the content completely*/
 }
 
+#contact {
+   color: white; /* Changes font color for contact section */
+}
+
 
 footer { /*Footer*/
     background-color: black;
